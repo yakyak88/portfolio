@@ -32,7 +32,7 @@ body {
 nav {
     background: var(--color-black);
     color: white;
-    min-height: 50px;
+    min-height: 35px;
     font-size: large;
     position: fixed;
     top: 0;
@@ -94,7 +94,7 @@ a:hover {
 }
 
 main {
-    margin: 0 10% 0 10%;
+    margin: 5% 10% 0 10%;
 }
 
 .project-card {
