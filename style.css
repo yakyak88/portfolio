@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-black: #262b2f;
+    --color-blue: #008cba;
+    --color-purple: #7e54ed;
+    --color-gray: gray;
+    --max-height: 650px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+body {
+    /* font-family: Helvetica; */
+    text-align: center;
+    margin: 0;
+    font-family: "Viga", sans-serif;
+    color: var(--color-black);
+}
+
+nav {
+    background: var(--color-black);
+    color: white;
+    min-height: 50px;
+    font-size: large;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 1px 5px black;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links > li {
+    margin: 0 5px 0 5px;
+}
+
+#about-section > h3 {
+    margin-top: -50px;
+}
+
+#about-section {
+    margin: 3% 0 3% 0;
+}
+
+#about-section > img {
+    max-width: 250px;
+    border-radius: 60%;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.black-links a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: large;
+    transition: 0.1s;
+}
+
+.black-links {
+    margin-bottom: 60px;
+}
+
+a:hover {
+    color: var(--color-blue);
+}
+
+main {
+    margin: 0 10% 0 10%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    max-height: var(--max-height);
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+h2 {
+    background: var(--color-black);
+    color: white;
+    border-radius: 5px;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+    border-top: 3px dotted var(--color-black);
+    border-radius: 5px;
+}
+
+.nav-bar-links,
+.techologies-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+.techologies-list > li {
+    background: var(--color-blue);
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    min-width: 90px;
+}
+
+.overlay-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: 0.1s ease;
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: 0.1s ease;
+}
+
+.project-container-1 {
+    position: relative;
+}
+
+.project-container-1:hover .overlay-1,
+.project-container-1:hover .overlay-2 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.project-container-1:hover img {
+    opacity: 0.5;
+}
+
+.text-1 {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--color-purple);
+    color: white;
+    border-radius: 5px;
+    padding: 25% 35% 25% 35%;
+}
+
+.text-2 {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: var(--color-purple);
+    color: white;
+    border-radius: 5px;
+    padding: 25%;
+}
+
+.text-1:hover,
+.text-2:hover {
+    background: var(--color-blue);
+}
+
+.project-links {
+    display: flex;
+}
+
+.project-nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page-numbers {
+    color: white;
+}
+
+footer {
+    color: var(--color-gray);
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#about-section h1,
+h3,
+p {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .project-image {
+        max-width: 300px;
+    }
+
+    .techologies-list > li {
+        padding: 2px 5px 2px 5px;
+        font-size: x-small;
+        min-width: 40px;
+    }
+
+    .text-1,
+    .text-2 {
+        font-size: 30px;
+    }
+}
