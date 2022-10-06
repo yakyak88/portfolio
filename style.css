@@ -6,9 +6,8 @@ html {
 
 :root {
     --color-olive: #687046;
-    --color-blue: #b2906d;
+    --color-beige: #b2906d;
     --color-purple: #e0c6ca;
-    --color-gray: #f8cbd9;
     --max-height: 650px;
 }
 
@@ -92,7 +91,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-blue);
+    color: var(--color-beige);
 }
 
 main {
@@ -130,7 +129,7 @@ hr {
 }
 
 .techologies-list > li {
-    background: var(--color-blue);
+    background: var(--color-beige);
     color: white;
     border-radius: 5px;
     padding: 2px 5px 2px 5px;
@@ -207,7 +206,7 @@ hr {
 
 .text-1:hover,
 .text-2:hover {
-    background: var(--color-blue);
+    background: var(--color-beige);
 }
 
 .project-links {
@@ -224,7 +223,7 @@ hr {
 }
 
 footer {
-    color: var(--color-gray);
+    color: var(--color-beige);
     font-size: small;
     display: flex;
     justify-content: space-between;
