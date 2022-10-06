@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 html {
     scroll-behavior: smooth;
 }
 
 :root {
-    --color-black: #262b2f;
-    --color-blue: #008cba;
-    --color-purple: #7e54ed;
-    --color-gray: gray;
+    --color-olive: #687046;
+    --color-blue: #b2906d;
+    --color-purple: #e0c6ca;
+    --color-gray: #f8cbd9;
     --max-height: 650px;
 }
 
@@ -26,11 +26,13 @@ body {
     text-align: center;
     margin: 0;
     font-family: "Viga", sans-serif;
-    color: var(--color-black);
+    color: var(--color-olive);
+    background-color: #e8dcc7;
+    color: var(--color-olive);
 }
 
 nav {
-    background: var(--color-black);
+    background: var(--color-olive);
     color: white;
     min-height: 35px;
     font-size: large;
@@ -38,7 +40,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
-    box-shadow: 0 1px 5px black;
+    box-shadow: 0 1px 5px white;
 }
 
 .social-links {
@@ -79,7 +81,7 @@ a {
 }
 
 .black-links a {
-    color: var(--color-black);
+    color: var(--color-olive);
     text-decoration: none;
     font-size: large;
     transition: 0.1s;
@@ -109,14 +111,14 @@ main {
 }
 
 h2 {
-    background: var(--color-black);
+    background: var(--color-olive);
     color: white;
     border-radius: 5px;
 }
 
 hr {
     margin: 10px 0 10px 0;
-    border-top: 3px dotted var(--color-black);
+    border-top: 3px dotted var(--color-olive);
     border-radius: 5px;
 }
 
